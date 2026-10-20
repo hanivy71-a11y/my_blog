@@ -1,0 +1,5 @@
+[
+  { "slug": "hello-world", "file": "hello-world.md" },
+  { "slug": "vanilla-js-tips", "file": "vanilla-js-tips.md" },
+  { "slug": "today-i-learned", "file": "today-i-learned.md" }
+]

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Blog</title>
+<script>
+  (function () {
+    var stored = localStorage.getItem("theme");
+    var theme =
+      stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-title" href="index.html">My Blog</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="다크 모드로 전환"></button>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <header class="post-header">
+        <a class="back-link" href="index.html">&larr; 목록으로</a>
+        <h1 id="post-title" class="post-header__title">불러오는 중...</h1>
+        <p id="post-meta" class="post-header__meta"></p>
+      </header>
+      <div id="post-content" class="post-content"></div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 My Blog</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="js/markdown.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/post.js"></script>
+</body>
+</html>
