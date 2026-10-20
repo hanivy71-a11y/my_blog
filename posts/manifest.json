@@ -1,3 +1,10 @@
 [
-  { "slug": "welcome-to-stylelog", "file": "welcome-to-stylelog.md" }
+  {
+    "slug": "welcome-to-stylelog",
+    "file": "welcome-to-stylelog.md"
+  },
+  {
+    "slug": "fashion-trends-2026-10-20",
+    "file": "fashion-trends-2026-10-20.md"
+  }
 ]
