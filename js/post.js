@@ -23,7 +23,7 @@
     var parsed = parseFrontmatter(raw);
     var data = parsed.data;
 
-    document.title = (data.title || slug) + " · My Blog";
+    document.title = (data.title || slug) + " · 스타일로그";
     titleEl.textContent = data.title || slug;
 
     var metaParts = [formatDate(data.date)];
